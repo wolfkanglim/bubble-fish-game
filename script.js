@@ -207,7 +207,7 @@ class Bubble{
 }
 function handleBubbles(){
      
-     if(gameFrame % 50 === 0){
+     if(gameFrame % 70 === 0){
           bubblesArray.volume = 0.5;
           bubblesArray.play();
           bubbles.push(new Bubble());
