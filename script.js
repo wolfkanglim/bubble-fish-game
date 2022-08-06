@@ -17,9 +17,10 @@ let mouse = {
      y: canvas.height/2,
      click: false
 }
+
+let canvasPos = canvas.getBoundingClientRect();
 canvas.addEventListener('mousedown', function(e) {
-     mouse.click = true;
-    let canvasPos = e.currentTarget.getBoundingClientRect();
+     mouse.click = true;    
     mouse.x = e.clientX - canvasPos.left;
     mouse.y = e.clientY - canvasPos.top;
     if(!gameOver){
@@ -330,10 +331,19 @@ function enemyHandler(deltaTime){
           let randomEnemy = Math.floor(Math.random() * enemyArray.length);
           enemies.push(enemyArray[randomEnemy]);
           enemyTimer = 0;
-          enemy1Sound.volume = 0.2;
-          enemy1Sound.currentTime = 0;
-          enemy1Sound.play();
-     }
+          if(randomEnemy < 2){               
+               enemy1Sound.volume = 0.2;
+               enemy1Sound.currentTime = 0;
+               enemy1Sound.play();
+           } else if(randomEnemy < 4){               
+               enemy3Sound.volume = 0.2;
+               enemy3Sound.currentTime = 0;
+               enemy3Sound.play();
+           }  else {               
+               enemy5Sound.volume = 0.2;
+               enemy5Sound.currentTime = 0;
+               enemy5Sound.play();
+           }
      enemies.forEach(enemy => {
           enemy.update();
           enemy.draw();
