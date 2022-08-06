@@ -344,6 +344,7 @@ function enemyHandler(deltaTime){
                enemy5Sound.currentTime = 0;
                enemy5Sound.play();
            }
+     }
      enemies.forEach(enemy => {
           enemy.update();
           enemy.draw();
