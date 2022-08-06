@@ -1,0 +1,41 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+body {
+     width: 100vw;
+     height: 100vh;
+     background-color: aqua;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+}
+#canvas1 {
+     width: 800px;
+     height: 500px;
+     background-color: blue;
+     border: 4px solid #333;
+}
+#kissing_fish, #undersea_merzed, #bubble_pop_1, #fish_red_swim, #fish_black_swim, #fish_blue_swim, #fish_purple_swim, #fish_green_swim, #fish_yellow_swim, #wondrous {
+     display: none;
+}
+#replayBtn {
+     position: absolute;
+
+     top: 75%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 250px;
+     height: 50px;
+     background-color:rgba(25, 25, 25, 0.7);
+     color: #fff;
+     border: 2px solid #fff;
+     border-radius: 10px;
+     display: none;
+     z-index: 20;
+}
+#replayBtn.show {
+     display: block;
+}
