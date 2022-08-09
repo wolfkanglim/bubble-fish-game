@@ -13,9 +13,9 @@ body {
      position: relative;
 }
 #canvas1 {
-     width: 800px;
-     height: 500px;
-     height: calc(100vh - calc(100vh - 100%))
+     width: 100%;
+     height: 100%;
+    
      background-color: blue;
      border: 4px solid #333;
 }
