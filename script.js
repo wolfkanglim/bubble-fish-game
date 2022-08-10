@@ -390,7 +390,7 @@ replayBtn.addEventListener('click', function(){
      if(gameOver = true){
          replayBtn.classList.remove('show');
           score = 0;
-          timer = 0;
+          enemyTimer = 0;
           deltaTime = 0;
           player.x = 0;
           player.y = canvas.height /2;
