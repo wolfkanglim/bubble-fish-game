@@ -317,7 +317,7 @@ class Enemy {
 
 let enemies = [];
 let enemyTimer = 0;
-let enemyInterval = 1000 + Math.random() * 10000;
+let enemyInterval = 1500 + Math.random() * 15000;
 
 function enemyHandler(deltaTime){
      if(enemyTimer > enemyInterval){
