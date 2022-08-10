@@ -14,8 +14,9 @@ body {
 }
 #canvas1 {
      width: 100%;
-     
-    
+     max-height: 500px;
+     height: 100%;
+     osition: relative;
      background-color: blue;
      border: 4px solid #333;
 }
@@ -25,7 +26,7 @@ body {
 #replayBtn {
      position: absolute;
 
-     top: 75%;
+     top: 60%;
      left: 50%;
      transform: translate(-50%, -50%);
      width: 250px;
