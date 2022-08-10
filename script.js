@@ -21,8 +21,8 @@ let mouse = {
 let canvasPos = canvas.getBoundingClientRect();
 canvas.addEventListener('mousedown', function(e) {
      mouse.click = true;    
-    mouse.x = e.clientX - canvasPos.left;
-    mouse.y = e.clientY - canvasPos.top;
+    mouse.x = e.clientX * 800 / canvasPos.width - canvasPos.left;
+    mouse.y = e.clientY * 500 / canvasPos.height - canvasPos.top;
     if(!gameOver){
      playerTurn.volume = 0.2;
      playerTurn.currentTime = 0;
